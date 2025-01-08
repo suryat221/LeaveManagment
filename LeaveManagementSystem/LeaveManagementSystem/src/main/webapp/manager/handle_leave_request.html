@@ -1,0 +1,10 @@
+<form action="/LeaveManagementSystem/manager/handle_leave_request" method="post">
+    <h3>Handle Leave Request</h3>
+    Request ID: <input type="text" name="request_id" required><br>
+    Action: 
+    <select name="action" required>
+        <option value="approve">Approve</option>
+        <option value="reject">Reject</option>
+    </select><br>
+    <button type="submit">Submit</button>
+</form>

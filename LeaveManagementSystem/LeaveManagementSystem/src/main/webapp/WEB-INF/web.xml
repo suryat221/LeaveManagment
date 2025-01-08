@@ -1,0 +1,75 @@
+<web-app>
+    <display-name>Leave Management System</display-name>
+
+    <servlet>
+        <servlet-name>EmployeeRegisterServlet</servlet-name>
+        <servlet-class>com.example.servlets.EmployeeRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeRegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EmployeeLoginServlet</servlet-name>
+        <servlet-class>com.example.servlets.EmployeeLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeLoginServlet</servlet-name>
+        <url-pattern>/employee/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ApplyLeaveServlet</servlet-name>
+        <servlet-class>com.example.servlets.ApplyLeaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApplyLeaveServlet</servlet-name>
+        <url-pattern>/employee/apply_leave</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewLeaveStatusServlet</servlet-name>
+        <servlet-class>com.example.servlets.ViewLeaveStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewLeaveStatusServlet</servlet-name>
+        <url-pattern>/employee/view_leave_status</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManagerRegisterServlet</servlet-name>
+        <servlet-class>com.example.servlets.ManagerRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManagerRegisterServlet</servlet-name>
+        <url-pattern>/manager/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManagerLoginServlet</servlet-name>
+        <servlet-class>com.example.servlets.ManagerLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManagerLoginServlet</servlet-name>
+        <url-pattern>/manager/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewLeaveRequestsServlet</servlet-name>
+        <servlet-class>com.example.servlets.ViewLeaveRequestsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewLeaveRequestsServlet</servlet-name>
+        <url-pattern>/manager/view_leave_requests</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HandleLeaveRequestServlet</servlet-name>
+        <servlet-class>com.example.servlets.HandleLeaveRequestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandleLeaveRequestServlet</servlet-name>
+        <url-pattern>/manager/handle_leave_request</url-pattern>
+    </servlet-mapping>
+</web-app>
