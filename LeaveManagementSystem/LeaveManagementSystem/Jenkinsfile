@@ -9,18 +9,22 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building...'
+                echo 'Building the project...'
+                // Add actual build commands here, e.g., Maven, Gradle, npm, etc.
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
+                echo 'Running tests...'
+                // Add test commands, e.g., unit tests or integration tests.
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                echo 'Deploying the application...'
+                // Add deployment commands here.
             }
         }
     }
 }
+
